@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addons>
 <addon id="plugin.video.torrenter" name="Torrenter" version="2.6.3" provider-name="inpos">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -29,24 +28,9 @@
 	<summary lang='es'>Complemento que nos permite ver vídeos que se distribuyen en redes BitTorrent sin necesidad de descargarlos previamente por completo.
         </summary>
         <description lang='es'>También gestiona torrents y nos deja elegir entre su propio cliente interno y otros externos (μTorrent, Transmission, Deluge, Vuze, qBittorrent), el cliente BitTorrent con el que realizar las descargas.
-        </description>
+        </description>    	
 	<forum>https://forums.tvaddons.ag/addon-releases/29224-torrenter-v2.html</forum>
 	<website>http://xbmc.ru/forum/showthread.php?t=6837</website>
 	<source>https://github.com/inpos/plugin.video.torrenter</source>
     </extension>
 </addon>
-
-<addon id="repository.Jota-C" name="[COLOR yellow]Jota-C Repo[/COLOR]" version="1.0.1" provider-name="Jota-C">
-    <extension point="xbmc.addon.repository" name="Repositorio Jota">
-        <info>https://raw.githubusercontent.com/Jota-C/Repo/master/Repositorio/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/Jota-C/Repo/master/Repositorio/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/Jota-C/Repo/master/Repositorio/</datadir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Repositorio para Mi</summary>
-        <description></description>
-        <disclaimer></disclaimer>
-        <platform>all</platform>
-    </extension>
-</addon>
-</addons>
