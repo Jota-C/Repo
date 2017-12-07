@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.Super Jota Wizard" 
+	   name="SUPER JOTA WIZARD" 
+	   version="1.0.1" 
+	   provider-name="JOTA-C"> 
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>SJWizard</summary>
+    <description>SUPER JOTA WIZARD, WIZARD PRIVADO SOLO PARA MI GENTE, DISFRUTAD!!!</description>
+    <platform>all</platform>
+  </extension>
+</addon>
