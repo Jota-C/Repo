@@ -1,5 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<addon id="plugin.video.MundoDragonBall"
+       name="MundoDragonBall"
+       version="0.0.1"
+       provider-name="Dani">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" />
+    <import addon="script.module.simplejson" />
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+
+  <extension point="xbmc.addon.metadata">
+    <summary>Mundo Dragon Ball: Addon con todo contenido referido a Dragon Ball</summary>
+    <description>
+    Addon Creado por Dani.
+	GNU/GPU 2017 LICENSE
+    </description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.S.J-JusTicIa"
        name="[B][COLOR red]S.J JusTicIa[/COLOR][/B]"
        version="1.0.1"
@@ -37,42 +71,6 @@
     </description>
     <platform>all</platform>
   </extension>
-</addon>
-
-<addon id="plugin.video.torrenter" name="Torrenter" version="2.6.3" provider-name="inpos">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.libtorrent"/>
-        <import addon="script.module.torrent.ts"/>
-        <import addon="script.module.requests"/>
-        <import addon="script.module.torrent2http"/>
-        <import addon="script.module.pyrrent2http"/>
-        <import addon="script.module.chardet" />
-        <import addon="script.module.pyxbmct"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <summary lang='en'>Plugin helps you to watch videos from p2p torrent-networks, without full predownload.
-        </summary>
-        <description lang='en'>It also can add, control torrents and play downloaded files with external torrent-client (uTorrent, Transmisson, Vuse, Deluge, qBittorrent) or python-libtorrent.
-        </description>
-        <disclaimer lang='en'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
-        <summary lang='ru'>Плагин позволяет просматривать видео из пиринговых торрент-сетей, не дожидаясь полного скачивания.
-        </summary>
-        <description lang='ru'>Так же плагин может добавлять, проигрывать и управлять скачками в торрент клиентах (uTorrent, Transmisson, Deluge и Vuse, qBittorrent) или средставми python-libtorrent.
-        </description>
-	<disclaimer lang='ru'>GNU GPLv3 http://www.gnu.org/licenses/</disclaimer>
-	<summary lang='es'>Complemento que nos permite ver vídeos que se distribuyen en redes BitTorrent sin necesidad de descargarlos previamente por completo.
-        </summary>
-        <description lang='es'>También gestiona torrents y nos deja elegir entre su propio cliente interno y otros externos (μTorrent, Transmission, Deluge, Vuze, qBittorrent), el cliente BitTorrent con el que realizar las descargas.
-        </description>
-	<forum>https://forums.tvaddons.ag/addon-releases/29224-torrenter-v2.html</forum>
-	<website>http://xbmc.ru/forum/showthread.php?t=6837</website>
-	<source>https://github.com/inpos/plugin.video.torrenter</source>
-    </extension>
 </addon>
 
 <addon id="repository.Jota-C" name="[COLOR yellow]Jota-C Repo[/COLOR]" version="1.0.1" provider-name="Jota-C">
